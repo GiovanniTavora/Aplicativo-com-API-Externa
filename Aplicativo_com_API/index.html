@@ -1,13 +1,21 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Busca de Livros</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="container">
+      <h1>Busca de Livros</h1>
+      <div class="search-box">
+        <input type="text" id="query" placeholder="Digite o título ou autor" />
+        <button onclick="handleSearch()">Buscar</button>
+      </div>
+      <ul id="book-list"></ul>
+    </div>
+
+    <script src="/src/index.js"></script>
   </body>
 </html>
